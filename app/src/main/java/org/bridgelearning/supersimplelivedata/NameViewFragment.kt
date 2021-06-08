@@ -26,9 +26,6 @@ class NameViewFragment : Fragment() {
         //Bind the ViewModel to the fragment_name_view.xml variable
         binding.simpleViewModel = model
 
-        //Bind the TextView to the LiveData val (currentName) in the ViewModel
-        binding.nameTextView.text = model.currentName.toString()
-
         //Create an onClickListener for the Change Name button
         binding.buttonChangeName.setOnClickListener {
             //call the changeName function in the NameViewModel
