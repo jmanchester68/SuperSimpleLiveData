@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Super Simple LiveData Example</string>
+    <string name="change_name">Change Name</string>
+</resources>
