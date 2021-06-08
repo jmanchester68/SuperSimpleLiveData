@@ -22,10 +22,13 @@ class NameViewFragment : Fragment() {
 
         // Get the ViewModel.
         model = ViewModelProvider(this).get(NameViewModel::class.java)
+
+        //Bind the ViewModel
         binding.simpleViewModel = model
 
         //Bind the TextView to the LiveData val (currentName) in the ViewModel
         binding.nameTextView.text = model.currentName.toString()
+
         //Create an onClickListener for the Change Name button
         binding.buttonChangeName.setOnClickListener {
             //call the changeName function in the NameViewModel
