@@ -5,6 +5,7 @@
         tools:context=".NameViewFragment">
 
         <data>
+            <!--Requires a binding statement to the ViewModel in fragment class-->
             <variable
                 name="simpleViewModel"
                 type="org.bridgelearning.supersimplelivedata.NameViewModel"

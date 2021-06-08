@@ -23,7 +23,7 @@ class NameViewFragment : Fragment() {
         // Get the ViewModel.
         model = ViewModelProvider(this).get(NameViewModel::class.java)
 
-        //Bind the ViewModel
+        //Bind the ViewModel to the fragment_name_view.xml variable
         binding.simpleViewModel = model
 
         //Bind the TextView to the LiveData val (currentName) in the ViewModel
